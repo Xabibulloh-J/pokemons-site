@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pokemons</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F1C69E]">
+   <header class="py-5">
+      <div class="w-[100%] max-w-[1040px] mx-auto px-5">
+         <div class="flex justify-between items-center">
+            <a class="hover:opacity-[0.5]" href="./index.html">
+               <img src="https://tcg.pokemon.com/assets/img/global/logos/en-us/tcg-logo-2x.png" alt="Pokemons logo" width="155" height="84">
+            </a>
+            <nav>
+               <ul class="flex gap-x-[30px]">
+                  <li><a class="text-[20px] text-[#fff] hover:opacity-[0.5]" href="#">Home</a></li>
+                  <li><a class="text-[20px] text-[#fff] hover:opacity-[0.5]" href="#">Cards</a></li>
+                  <li><a class="text-[20px] text-[#fff] hover:opacity-[0.5]" href="#">Numbers</a></li>
+                  <li><a class="text-[20px] text-[#fff] hover:opacity-[0.5]" href="#">Candies</a></li>
+                  <li><a class="text-[20px] text-[#fff] hover:opacity-[0.5]" href="#">Eggs</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section class="py-[50px]">
+         <div class="w-[100%] max-w-[1040px] mx-auto px-5">
+            <h1 class="sr-only">Play pokemon cards!</h1>
+            <img class="mx-auto" src="./photo_2024-08-07_16-48-46.jpg" alt="pokemon img">
+            <form class="flex gap-x-[50px] items-center w-[747px] my-[40px] mx-auto" action="#" method="GET" autocomplete="off">
+               <input type="search"
+               class="w-[400px] p-[7px] rounded-[5px]"
+               aria-label="enter poke"
+               placeholder="Enter poke...">
+               <select class="p-[7px] rounded-[5px]">
+                  <option selected hidden>Choose pokemons</option>
+                  <option value="grass poison">Grass Poison</option>
+                  <option value="fire">Fire</option>
+                  <option value="water">Water</option>
+                  <option value="bug">Bug</option>
+                  <option value="normal">Normal</option>
+                  <option value="normal flying">Normal Flying</option>
+                  <option value="electric">Electric</option>
+                  <option value="ground">Ground</option>
+                  <option value="bug grass">Bug Grass</option>
+                  <option value="fighting">Fighting</option>
+               </select>
+               <button type="button" class="w-[80px] p-[7px] rounded-[5px] bg-[#fff]">click</button>
+            </form>
+            <h2 class="sr-only">All cards</h2>
+            <ul class="js-poke-list flex justify-between items-start flex-wrap gap-y-[50px]"></ul>
+         </div>
+      </section>
+   </main>
+
+
+
+   <script src="pokemons.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>
